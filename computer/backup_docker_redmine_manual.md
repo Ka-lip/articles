@@ -4,8 +4,10 @@
     `docker volume ls`
 
 1. Confirm the contents in the volumes
-    `docker run --rm -v redmine_work_sqlite:/v alpine sh -lc "ls -lah /v; du -sh /v"`
-    `docker run --rm -v redmine_work_files:/v alpine sh -lc "ls -lah /v; du -sh /v"`
+   ```bash  
+    docker run --rm -v redmine_work_sqlite:/v alpine sh -lc "ls -lah /v; du -sh /v"  
+    docker run --rm -v redmine_work_files:/v alpine sh -lc "ls -lah /v; du -sh /v"
+   ```
 
 1. Back the volume as a single file
     ```bash
